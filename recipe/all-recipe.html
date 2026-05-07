@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and responsive design, along with a link to the external CSS stylesheet -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--****************************************************************************************************************-->
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- BODY CONTENT GOES HERE -->
+
+    <section>
+
+<header><h1>Simple Home Recipes</h1></header>
+
+    </section>
+
+    <!--BOOTSTRAP WAS USED HERE-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+aria-label="Toggle navigation">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="../index.html">
+      <img src="../images/logo.png" alt="Logo" width="100" height="70">
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="all-recipe.html">Recipes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../cooking-tips/tips.html">Cooking Tips</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../team-profile/team-profile.html">Team Profile</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="../about-us/aboutus.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../contact/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header>
+    <h2>Recipes</h2>
+
+</header>
+
+<section class="category-bar">
+    <strong>Category</strong>
+    <input type="text" id="searchInput" placeholder="Search recipe">
+    <button type="button" onclick="searchRecipes()">Search</button>
+
+</section>
+
+
+<main class="recipes-page">
+
+<aside class="recipe-sidebar">
+    <ul>
+        <li><a href="#" onclick="setActive(this); filterRecipes('all')">All</a></li>
+        <li><a href="#" onclick="setActive(this); filterRecipes('breakfast')">Breakfast</a></li>
+        <li><a href="#" onclick="setActive(this); filterRecipes('lunch')">Lunch</a></li>
+        <li><a href="#" onclick="setActive(this); filterRecipes('dessert')">Dessert</a></li>
+    </ul>
+</aside>
+
+
+<section class="content-area">
+<ul class="recipes">
+
+    <li class="recipe breakfast">
+        <a href="../images/breakfast/ackee.jpg">
+        <img src="../images/breakfast/ackeensaltfish.webp" alt="Ackee and Saltfish">
+        <p class="meal-name">Ackee and Saltfish</p>
+        </a>
+    </li>
+
+     <li class="recipe breakfast">
+        <a href="../images/breakfast/callaloo.jpg">
+        <img src="../images/breakfast/steamcallaloo.webp" alt="Steam Callaloo">
+        <p class="meal-name">Steam Callaloo</p>
+        </a>
+    </li>
+
+    <li class="recipe dessert">
+        <a href="../images/dessert/Grater-Cake.jpg">
+        <img src="../images/dessert/gratercake.webp" alt="Grater Cake">
+        <p class="meal-name">Grater Cake</p>
+        </a>
+    </li>
+
+     <li class="recipe lunch">
+        <a href="../images/lunch/EscovitchFish.jpg">
+        <img src="../images/lunch/fish.webp" alt="Escovitch Fish">
+        <p class="meal-name">Escovitch Fish</p>
+        </a>
+    </li>
+
+     <li class="recipe breakfast">
+        <a href="../images/breakfast/dumpling.jpg">
+        <img src="../images/breakfast/frydumplin.webp" alt="Fried Dumpling">
+        <p class="meal-name">Fried Dumpling</p>
+        </a>
+    </li>
+
+     <li class="recipe dessert">
+        <a href="../images/dessert/Sweet-Potato-Pudding.jpg">
+        <img src="../images/dessert/pudding.webp" alt="Sweet Potato Pudding">
+        <p class="meal-name">Sweet Potato Pudding</p>
+        </a>
+    </li>
+
+     <li class="recipe lunch">
+        <a href="../images/lunch/SteamedFish.jpg">
+        <img src="../images/lunch/fishncrackers.webp" alt="Steam Fish and Crackers">
+        <p class="meal-name">Steam Fish and Crackers</p>
+        </a>
+    </li>
+
+     <li class="recipe breakfast">
+        <a href="../images/breakfast/banana.jpg">
+        <img src="../images/breakfast/bananaporridge.webp" alt="Banana Porridge">
+        <p class="meal-name">Banana Porridge</p>
+        </a>
+    </li>
+
+    <li class="recipe dessert">
+        <a href="../images/dessert/Jamaican-Toto.jpg">
+        <img src="../images/dessert/toto.webp" alt="Jamaican Toto">
+        <p class="meal-name">Jamaican Toto</p>
+        </a>
+    </li>
+
+    <li class="recipe lunch">
+        <a href="../images/lunch/BullyBeef.jpg">
+        <img src="../images/lunch/cornbeef.webp" alt="Bully Beef">
+        <p class="meal-name">Bully Beef</p>
+        </a>
+    </li>
+
+
+     <li class="recipe breakfast">
+        <a href="../images/breakfast/bananafritters.jpg">
+        <img src="../images/breakfast/bananafrit.webp" alt="Banana Fritters">
+        <p class="meal-name">Banana Fritters</p>
+        </a>
+    </li>
+
+
+     <li class="recipe breakfast">
+        <a href="../images/breakfast/cabbage.jpg">
+        <img src="../images/breakfast/cabbagensaltfish.webp" alt="Cabbage and Saltfish">
+        <p class="meal-name">Cabbage and Saltfish</p>
+        </a>
+    </li>
+
+    <li class="recipe lunch">
+        <a href="../images/lunch/StewPeas.jpg">
+        <img src="../images/lunch/stewpea.webp" alt="Stew Peas">
+        <p class="meal-name">Stew Peas</p>
+        </a>
+    </li>
+
+    <li class="recipe dessert">
+        <a href="../images/dessert/Plantain-Tart.jpg">
+        <img src="../images/dessert/tart.jpg" alt="Plantain-Tart">
+        <p class="meal-name">Plantain-Tart</p>
+        </a>
+    </li>
+
+    <li class="recipe breakfast">
+        <a href="../images/breakfast/fritters.jpg">
+        <img src="../images/breakfast/saltfishfritters.webp" alt="Saltfish Fritters">
+        <p class="meal-name">Saltfish Fritters</p>
+        </a>
+    </li>
+
+     <li class="recipe lunch">
+        <a href="../images/lunch/StewChicken.jpg">
+        <img src="../images/lunch/stew.webp" alt="Stew Chicken">
+        <p class="meal-name">Stew Chicken</p>
+        </a>
+    </li>
+
+    <li class="recipe breakfast">
+        <a href="../images/breakfast/liver.jpg">
+        <img src="../images/breakfast/chickenliver.webp" alt="Stew Chicken Liver">
+        <p class="meal-name">Stew Chicken Liver</p>
+        </a>
+    </li>
+
+    <li class="recipe lunch">
+        <a href="../images/lunch/BraisedOxtail.jpg">
+        <img src="../images/lunch/oxtail.jpg" alt="Braise Oxtail">
+        <p class="meal-name">Braise Oxtail</p>
+        </a>
+    </li>
+
+    <li class="recipe dessert">
+        <a href="../images/dessert/Fruit-Cake.jpg">
+        <img src="../images/dessert/cake.jpg" alt="Fruit Cake">
+        <p class="meal-name">Fruit Cake</p>
+        </a>
+    </li>
+
+    <li class="recipe lunch">
+        <a href="../images/lunch/CurryChicken.jpg">
+        <img src="../images/lunch/curry.webp" alt="Curry Chicken">
+        <p class="meal-name">Curry Chicken</p>
+        </a>
+    </li>
+
+
+    <li class="recipe breakfast">
+        <a href="../images/breakfast/cornmealPorridge.jpg">
+        <img src="../images/breakfast/cornmeal.webp" alt="Cornmeal Porridge">
+        <p class="meal-name">Cornmeal Porridge</p>
+        </a>
+    </li>
+
+    <li class="recipe dessert">
+        <a href="../images/dessert/Coconut-Drops.jpg">
+        <img src="../images/dessert/drops.webp" alt="Coconut Drops">
+        <p class="meal-name">Coconut Drops</p>
+        </a>
+    </li>
+
+    <li class="recipe lunch">
+        <a href="../images/lunch/GungoPeasSoup.jpg">
+        <img src="../images/lunch/gungosoup.webp" alt="Gungo Peas Soup">
+        <p class="meal-name">Gungo Peas Soup</p>
+        </a>
+    </li>
+
+    <li class="recipe dessert">
+        <a href="../images/dessert/Gizzada.jpg">
+        <img src="../images/dessert/gizzada.webp" alt="Gizzada">
+        <p class="meal-name">Gizzada</p>
+        </a>
+    </li>
+
+    <li class="recipe lunch">
+        <a href="../images/lunch/RiceandPeas.jpg">
+        <img src="../images/lunch/rice.webp" alt="Rice and Peas">
+        <p class="meal-name">Rice and Peas</p>
+        </a>
+    </li>
+
+
+    <li class="recipe dessert">
+        <a href="../images/dessert/Blue-Drawers.jpg">
+        <img src="../images/dessert/bluedraws.jpg" alt="Blue Drawers">
+        <p class="meal-name">Blue Drawers</p>
+        </a>
+    </li>
+
+    <li class="recipe dessert">
+        <a href="../images/dessert/Cornmeal-Pudding.jpg">
+        <img src="../images/dessert/cornmeal.webp" alt="Cornmeal Pudding">
+        <p class="meal-name">Cornmeal Pudding</p>
+        </a>
+    </li>
+
+
+</ul>
+
+<nav class="pagination-nav mt-4" aria-label="Pagination">
+    <ul class="pagination justify-content-center" id="pagination"></ul>
+</nav>
+
+
+
+</section>
+
+</main>
+
+<footer>
+    <ul>
+        <li><a href="../team-profile/team-profile.html">Team Profile</a></li>
+        <li><a href="../contact/contact.html">Social Media</a></li>
+        <li><a href="../contact/contact.html">Email</a></li>
+        <li><a href="../contact/contact.html">Contact</a></li>
+    </ul>
+<p>&copy; 2026 Simple Home Recipes • All Rights Reserved • Academic Project for CS130</p>
+</footer>
+
+<script src="../assets/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body> <!-- BODY CONTENT ENDS HERE -->
+
+</html> <!-- HTML DOCUMENT ENDS HERE -->

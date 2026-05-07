@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and responsive design, along with a link to the external CSS stylesheet -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--****************************************************************************************************************-->
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- BODY CONTENT GOES HERE -->
+
+<header>
+    <h1>Simple Home Recipes</h1>
+</header>
+
+<!--BOOTSTRAP WAS USED HERE-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Logo" width="100" height="70">
+    </a>
+
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+    aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="recipe/all-recipe.html">Recipes</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="cooking-tips/tips.html">Cooking Tips</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="team-profile/team-profile.html">Team Profile</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="about-us/aboutus.html">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact/contact.html">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main class="recipe-layout">
+
+    <section class="hero">
+    <h1>SIMPLE HOME<br>RECIPE</h1>
+    <!-- Wrap the input in a form -->
+    <form action="recipe/all-recipe.html" method="GET">
+        <input type="text" name="query" class="search-bar" placeholder="Search for a recipe...">
+        <button type="submit" style="display:none;">Search</button>
+    </form>
+</section>
+
+<!-- Recipe 1 -->
+
+<section class="featured">
+            <h2>Featured Recipe</h2>
+<ul class="recipe-grid">
+
+<li class="recipe-card">
+
+<figure class="card-img">
+
+<img src="images/breakfast/ackeensaltfish.webp"
+
+alt="Ackee and Saltfish">
+
+<span class="card-category">Breakfast</span>
+
+</figure>
+
+<section class="card-content">
+
+<h3>Ackee and Saltfish</h3>
+
+<p>Ackee salted codfish that is sautéed with onions, tomatoes, sweet peppers, and spices. Ready in 20 minutes.</p>
+
+<footer class="card-meta">
+
+<span><i class="far fa-clock"></i> 20 min</span>
+
+<span><i class="fas fa-chart-simple"></i> Medium</span>
+
+</footer>
+
+<a href="images/breakfast/ackee.jpg" class="card-link">Cook Now →</a>
+
+</section>
+
+</li>
+
+
+<li class="recipe-card">
+
+<figure class="card-img">
+
+<img src="images/lunch/oxtail.jpg"
+
+alt="Braised Oxtail">
+
+<span class="card-category">Lunch</span>
+
+</figure>
+
+<section class="card-content">
+
+<h3>Braised Oxtail</h3>
+
+<p>Slow-cooked oxtail in a rich, savory sauce with broad beans. 3 hours.</p>
+
+<footer class="card-meta">
+
+<span><i class="far fa-clock"></i> 3hrs</span>
+
+<span><i class="fas fa-chart-simple"></i> Medium</span>
+
+</footer>
+
+<a href="images/lunch/BraisedOxtail.jpg" class="card-link">Cook Now →</a>
+
+</section>
+
+</li>
+
+
+<!-- Recipe 3 -->
+
+<li class="recipe-card">
+
+<figure class="card-img">
+
+<img src="images/dessert/pudding.webp"
+
+alt="Sweet Potato Pudding">
+
+<span class="card-category">Dessert</span>
+
+</figure>
+
+<section class="card-content">
+
+<h3>Sweet Potato Pudding</h3>
+
+<p>grated sweet potatoes mixed with coconut milk, brown sugar, flour, spices (such as nutmeg and cinnamon), and sometimes raisins</p>
+
+<footer class="card-meta">
+
+<span><i class="far fa-clock"></i> 1hr 30 min</span>
+
+<span><i class="fas fa-chart-simple"></i> Medium</span>
+
+</footer>
+
+<a href="images/dessert/Sweet-Potato-Pudding.jpg" class="card-link">Cook Now →</a>
+
+</section>
+
+</li>
+
+</ul>
+
+</section>
+
+</main>
+
+<footer>
+    <ul>
+        <li><a href="team-profile/team-profile.html">Team Profile</a></li>
+        <li><a href="contact/contact.html">Social Media</a></li>
+        <li><a href="contact/contact.html">Email</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
+    </ul>
+<p>&copy; 2026 Simple Home Recipes • All Rights Reserved • Academic Project for CS130</p>
+</footer>
+
+<script src="assets/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
